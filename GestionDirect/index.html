@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body onKeyPress="CheckKey(event);" onload="setAll();">
+
+    <div class="grid h-screen h-screen-ios grid-cols-12 overflow-y-hidden bg-gray-100">
+        <div
+            class="fixed inset-0 z-50 flex flex-col items-end justify-start w-full px-4 py-6 pointer-events-none sm:p-6">
+        </div>
+        <div
+            class="flex items-center justify-center w-full max-w-sm col-span-12 p-4 mx-auto text-gray-900 md:p-8 md:col-span-6 lg:col-span-4 flex-2 md:pb-48 md:pt-40">
+            <div class="w-full"><img src="/build/img/gestion-logo.svg"
+                    class="block w-90 h-auto max-w-full mb-32 text-primary-400" alt="Gestion logo">
+                <form id="loginForm" name="logonform" class="mt-12 text-left">
+                    <div class="relative w-full text-left mb-4"><label
+                            class="flex text-sm not-italic items-center font-medium text-primary-800 whitespace-nowrap justify-between">
+                            <div>Email <span class="text-sm text-red-500"> * </span></div>
+                            <!---->
+                            <!---->
+                        </label>
+                        <div class="flex flex-col mt-1">
+                            <div class="relative rounded-md shadow-sm font-base" name="email">
+                                <!---->
+                                <!---->
+                                <!----><input type="text" name="Login" id="Editbox1" onblur="onLoginTyped();" value="" 
+                                    class="font-base block w-full sm:text-sm border-gray-200 rounded-md text-black focus:ring-primary-400 focus:border-primary-400">
+                                <!---->
+                                <!---->
+                            </div>
+                            <!---->
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="relative w-full text-left mb-4"><label
+                            class="flex text-sm not-italic items-center font-medium text-primary-800 whitespace-nowrap justify-between">
+                            <div>Contraseña <span class="text-sm text-red-500"> * </span></div>
+                            <!---->
+                            <!---->
+                        </label>
+                        <div class="flex flex-col mt-1">
+                            <div class="relative rounded-md shadow-sm font-base" name="password">
+                                <!---->
+                                <!---->
+                                <!----><input type="password" name="Password" id="Editbox2" onfocus="onPasswordFocused();"
+                value=""
+                                    class="font-base block w-full sm:text-sm border-gray-200 rounded-md text-black pr-10 focus:ring-primary-400 focus:border-primary-400">
+                                <!---->
+                            </div>
+                            <!---->
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-8">
+                        <div class="mb-4"><a href="#" class="text-sm text-primary-400 hover:text-gray-700">¿Olvidaste tu
+                                contraseña?</a></div>
+                    </div><input id="buttonLogOn" type="button" value="Iniciar sesión" onclick="cplogon();" 
+                        class="inline-flex whitespace-nowrap items-center border font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-sm leading-5 rounded-md border-transparent shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 gdButton"
+                        ></input>
+                </form>
+                <div class="pt-24 mt-0 text-sm not-italic font-medium leading-relaxed text-left text-gray-400 md:pt-40"
+                    data-v-276a8070="">
+                    <p class="mb-3" data-v-276a8070=""> Copyright @ Gestion Direct</p>
+                </div>
+            </div>
+        </div>
+        <div class="relative flex-col items-center justify-center hidden w-full h-full pl-10 bg-no-repeat bg-cover md:col-span-6 lg:col-span-8 md:flex content-box"
+            data-v-276a8070="">
+            <div class="pl-20 xl:pl-0" data-v-276a8070="">
+                <h1 class="hidden mb-3 text-3xl leading-normal text-left text-white xl:text-5xl xl:leading-tight md:none lg:block"
+                    data-v-276a8070=""><b class="font-bold" data-v-276a8070="">Con Gestión Direct</b> <br
+                        data-v-276a8070=""> gestiona tu negocio <br> de manera más productiva. <br data-v-276a8070="">
+                </h1>
+                <p class="hidden text-sm not-italic font-normal leading-normal text-left text-gray-100 xl:text-base xl:leading-6 md:none lg:block"
+                    data-v-276a8070=""> Gestión Direct es una aplicación de gestión de empresa<br data-v-276a8070="">
+                    que le ayuda en los diferentes departamentos. <br data-v-276a8070=""></p>
+            </div>
+            <div class="absolute z-50 w-full bg-no-repeat content-bottom" data-v-276a8070=""></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
